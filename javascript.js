@@ -1,10 +1,12 @@
-// track scores //
-let humanScore = 0;
-let computerScore = 0;
+
 playGame();
 
 // play 5 times //
 function playGame(){
+    // track scores //
+let humanScore = 0;
+let computerScore = 0;
+
 for (let i = 0; i < 5; i++){
     playRound();
 }
@@ -15,12 +17,8 @@ if(humanScore > computerScore){
 } else {
     console.log('You draw! Wanna play again?');
 }
-}
-
-
 
 // single round, who win? //
-
 function playRound(){
     const humanChoice = getHumanChoice();
     const computerChoice = getComputerChoice();
@@ -71,6 +69,12 @@ function playRound(){
         console.log(`You draw! Play again.`);
     }
 }
+
+}
+
+
+
+
 
     
 
